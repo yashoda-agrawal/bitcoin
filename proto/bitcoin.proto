@@ -1,0 +1,14 @@
+syntax = "proto3";
+package bitcoin;
+
+service BitcoinService {
+    rpc get_bitcoin(BitcoinRequest) returns (BitcoinResponse) {}
+}
+
+message BitcoinRequest {
+    string url = 1;
+}
+
+message BitcoinResponse {
+    string url = 1;
+}
